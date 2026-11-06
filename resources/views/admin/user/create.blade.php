@@ -36,13 +36,13 @@
                             <!-- First Name -->
                             <div class="mb-3">
                                 <label for="first_name" class="form-label">Name</label>
-                                <input type="text" name="Name" id="first_name" class="form-control" required>
+                                <input type="text" name="name" id="first_name" class="form-control" required>
                             </div>
 
                             <!-- Last Name -->
                             <div class="mb-3">
                                 <label for="last_name" class="form-label">Email</label>
-                                <input type="text" name="last_name" id="last_name" class="form-control" required>
+                                <input type="text" name="email" id="last_name" class="form-control" required>
                             </div>
                         </div>
 
@@ -50,11 +50,11 @@
                             <!-- Birthday -->
                             <div class="mb-3">
                                 <label for="birthday" class="form-label">Password</label>
-                                <input type="password" name="birthday" id="birthday" class="form-control">
+                                <input type="password" name="password" id="birthday" class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label for="birthday" class="form-label">Confirm Password</label>
-                                <input type="password" name="birthday" id="birthday" class="form-control">
+                                <input type="password" name="password_confirmation" id="birthday" class="form-control">
                             </div>
 
                             <!-- Gender -->

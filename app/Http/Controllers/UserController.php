@@ -36,7 +36,7 @@ public function index()
     {
 
         //dd($request->all())
-        $data = $request->only(['first_name', 'last_name', 'birthday', 'gender', 'email', 'phone']);
+        $data = $request->only(['name', 'email']);
         $data['password'] = Hash::make('password');
         User::create($data);
 
@@ -56,8 +56,8 @@ public function index()
      */
     public function edit(string $id)
     {
-        User::findOrFail($id);
-        return view('admin.user.edit');
+        $user = User::findOrFail($id);
+        return view('admin.user.edit', compact('user'));
     }
 
     /**
