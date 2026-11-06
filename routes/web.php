@@ -6,6 +6,7 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\CVcontroller;
+use App\Http\Controllers\UserController;
 
 
 
@@ -24,3 +25,5 @@ Route::get('/home', [HomeController::class, 'index'])->name('halamanUtama');
 Route::resource('cv', CVcontroller::class);
 
 Route::get('/halamanUtama', [CVcontroller::class, 'halamanCV'])->name('cv.halaman');
+
+Route::resource('user', UserController::class);
