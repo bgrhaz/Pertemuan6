@@ -56,8 +56,8 @@ public function index()
      */
     public function edit(string $id)
     {
-        $user = User::findOrFail($id);
-        return view('admin.user.edit', compact('user'));
+        $user['dataUser'] = User::findOrFail($id);
+        return view('admin.user.edit', $user);
     }
 
     /**
@@ -65,16 +65,12 @@ public function index()
      */
     public function update(Request $request, string $id)
     {
-        $data['first_name'] = $request->first_name;
-        $data['last_name'] = $request->last_name;
-        $data['birthday'] = $request->birthday;
-        $data['gender'] = $request->gender;
+        $data['name'] = $request->name;
         $data['email'] = $request->email;
-        $data['phone'] = $request->phone;
 
-        Pelanggan::where('pelanggan_id', $id)->update($data);
+        User::where('id', $id)->update($data);
 
-        return redirect()->route('pelanggan.index')->with('success', 'Perubahan Data Berhasil!');
+        return redirect()->route('user.index')->with('success', 'Perubahan Data Berhasil!');
     }
 
     /**
