@@ -33,7 +33,7 @@
     <main class="content">
 
     <!-- Start Header -->
-    @include('layouts.admin.header')  
+    @include('layouts.admin.header')
     <!-- End Header -->
 
     <!-- Start Main Content -->
@@ -48,10 +48,9 @@
     </main>
 
     <!-- Start JS -->
-    <!-- Core -->
     @include('layouts.admin.js')
     <!-- End JS -->
-     
+
 </body>
 
 </html>

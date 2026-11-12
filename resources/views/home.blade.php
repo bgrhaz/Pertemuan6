@@ -53,7 +53,7 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+    {{-- Start Navbar --}}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">My Laravel App</a>
@@ -79,6 +79,7 @@
             </div>
         </div>
     </nav>
+    {{-- End Navbar --}}
 
     <!-- Hero Section -->
     <section class="hero-section">
